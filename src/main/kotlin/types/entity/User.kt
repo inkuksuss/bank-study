@@ -9,7 +9,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table
-data class User {
+data class User (
 
     @Id
     @Column(name = "ulid", length = 12, nullable = false)
@@ -35,4 +35,4 @@ data class User {
 //
 //    @Column(name = "updated_at", nullable = false)
 //    val updatedAt: LocalDateTime = LocalDateTime.now()
-}
+)
