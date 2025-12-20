@@ -17,7 +17,7 @@ import java.net.URI
 @RequestMapping("/api/v1/auth")
 class AuthController(
     private val authService: AuthService
-) {동
+) {
 
     @GetMapping("/callback")
     fun callback(
