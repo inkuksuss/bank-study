@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="OAuth - JsonUtil 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/jwt/JwtProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="OAuth - Jwt service 로직 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/logging/Logging.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/transaction/Transactional.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/controller/AuthController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/repository/AuthUserRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/config/OAuth2Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/config/OAuth2Config.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/AuthServce.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/AuthServce.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/GithubAuthService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/GithubAuthService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/GoogleAuthService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/GoogleAuthService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/types/entity/Account.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/types/entity/Account.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/types/entity/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/types/entity/User.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +67,7 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -107,7 +103,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.kotlinCompiler",
+    "settings.editor.selected.configurable": "spring.boot.initializr",
     "spring.configuration.checksum": "7805b62d5ca017980fc795a16eb96e38",
     "vue.rearranger.settings.migration": "true"
   }
@@ -192,7 +188,7 @@
       <workItem from="1765965271359" duration="698000" />
       <workItem from="1765965979799" duration="10421000" />
       <workItem from="1766032579639" duration="1902000" />
-      <workItem from="1766034503650" duration="3322000" />
+      <workItem from="1766034503650" duration="11239000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765966295588</created>
@@ -215,17 +211,36 @@
       <option name="project" value="LOCAL" />
       <updated>1766030462201</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="OAuth - Jwt service 로직 추가">
+      <created>1766039571784</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766039571784</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="OAuth - HttpClient 연동" />
     <MESSAGE value="OAuth - JsonUtil 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth - JsonUtil 추가" />
+    <MESSAGE value="OAuth - Jwt service 로직 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="OAuth - Jwt service 로직 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
