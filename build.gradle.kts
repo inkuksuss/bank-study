@@ -5,6 +5,8 @@ plugins {
     kotlin("jvm") version "2.0.21"
     kotlin("plugin.spring") version "1.8.0"
     kotlin("plugin.serialization") version "1.8.0"
+    kotlin("plugin.allopen") version "1.6.21"
+    kotlin("plugin.noarg") version "1.6.21"
 }
 
 group = "org.example"
@@ -34,6 +36,16 @@ dependencies {
     implementation("com.github.f4b6a3:ulid-creator:5.2.3")
 
     testImplementation(kotlin("test"))
+}
+
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.MappedSuperclass")
+    annotation("javax.persistence.Embeddable")
+}
+
+noArg {
+    annotation("jakarta.persistence.Entity")
 }
 
 tasks.test {

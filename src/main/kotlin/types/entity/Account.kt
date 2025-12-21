@@ -1,12 +1,13 @@
 package org.example.types.entity
 
+import PrimaryKeyEntity
 import jakarta.persistence.*
 import java.math.BigDecimal
 import java.time.LocalDateTime
 
 @Entity
 @Table
-data class Account (
+class Account (
     @Id
     @Column(name = "ulid", length = 12, nullable = false)
     val ulid: String,
@@ -29,4 +30,8 @@ data class Account (
 
     @Column(name = "updated_at", nullable = false)
     val updatedAt: LocalDateTime = LocalDateTime.now()
-)
+): PrimaryKeyEntity() {
+    override fun getId(): String? {
+        return ulid
+    }
+}
