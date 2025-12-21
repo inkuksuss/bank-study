@@ -2,7 +2,9 @@
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
-!**/src/test/**/build/
+!**/src/main/**/build/
+!**/src/test/resources
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

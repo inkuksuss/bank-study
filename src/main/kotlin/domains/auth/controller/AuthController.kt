@@ -25,7 +25,7 @@ class AuthController(
         @RequestParam("state", required = true) state: String,
         response: HttpServletResponse
     ): ResponseEntity<Map<String, String>> {
-        val token: String = authService.handleAuth(code, state)
+        val token: String = authService.handleAuth(state, code)
 
         response.addCookie(
             Cookie("authToken", token).apply {
@@ -45,4 +45,3 @@ class AuthController(
         authService.verifyToken(authHeader)
     }
 }
-성

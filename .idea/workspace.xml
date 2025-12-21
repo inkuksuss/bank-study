@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="OAuth - Jwt service 로직 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/logging/Logging.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/transaction/Transactional.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/controller/AuthController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/repository/AuthUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/AuthServce.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/service/AuthServce.kt" afterDir="false" />
+    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="OAuth- mysql 연동">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/auth/controller/AuthController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/auth/controller/AuthController.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +59,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -188,7 +182,7 @@
       <workItem from="1765965271359" duration="698000" />
       <workItem from="1765965979799" duration="10421000" />
       <workItem from="1766032579639" duration="1902000" />
-      <workItem from="1766034503650" duration="11239000" />
+      <workItem from="1766034503650" duration="18162000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765966295588</created>
@@ -218,7 +212,35 @@
       <option name="project" value="LOCAL" />
       <updated>1766039571784</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="OAuth - 레포, 컨트롤러 작성">
+      <created>1766233062206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766233062206</updated>
+    </task>
+    <task id="LOCAL-00006" summary="오타 수정">
+      <created>1766233097529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766233097529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Entity data -&gt; class 구조 변경">
+      <created>1766293549734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766293549734</updated>
+    </task>
+    <task id="LOCAL-00008" summary="OAuth- mysql 연동">
+      <created>1766293665438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766293665438</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +262,11 @@
     <MESSAGE value="OAuth - HttpClient 연동" />
     <MESSAGE value="OAuth - JsonUtil 추가" />
     <MESSAGE value="OAuth - Jwt service 로직 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth - Jwt service 로직 추가" />
+    <MESSAGE value="OAuth - 레포, 컨트롤러 작성" />
+    <MESSAGE value="오타 수정" />
+    <MESSAGE value="Entity data -&gt; class 구조 변경" />
+    <MESSAGE value="OAuth- mysql 연동" />
+    <option name="LAST_COMMIT_MESSAGE" value="OAuth- mysql 연동" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

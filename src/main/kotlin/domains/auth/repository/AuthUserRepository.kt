@@ -11,7 +11,7 @@ interface AuthUserRepository: JpaRepository<User, String> {
     fun existsByUsername(username: String): Boolean
 
     @Modifying
-    @Query("UPDATE User SET accessToken = :token WHERE username = :username")
+    @Query("UPDATE User SET accessToken = :accessToken WHERE username = :username")
     fun updateAccessTokenByUsername(
         @Param("username") username: String,
         @Param("accessToken") accessToken: String

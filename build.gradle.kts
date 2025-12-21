@@ -4,6 +4,7 @@ plugins {
 
     kotlin("jvm") version "2.0.21"
     kotlin("plugin.spring") version "1.8.0"
+    kotlin("plugin.jpa") version "1.9.22"
     kotlin("plugin.serialization") version "1.8.0"
     kotlin("plugin.allopen") version "1.6.21"
     kotlin("plugin.noarg") version "1.6.21"
