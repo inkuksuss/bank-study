@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="OAuth- mysql 연동">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/controller/BankController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/repository/BankAccountRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/repository/BankUserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/service/BankService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/types/dto/Reponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="bank layer 생성 및 초기화">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/logging/Logging.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/logging/Logging.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/bank/repository/BankUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/repository/BankUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/bank/service/BankService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/bank/service/BankService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/types/entity/Account.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/types/entity/Account.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/types/entity/PrimaryKeyEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/types/entity/PrimaryKeyEntity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +106,11 @@
     "settings.editor.selected.configurable": "spring.boot.initializr",
     "spring.configuration.checksum": "7805b62d5ca017980fc795a16eb96e38",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -187,7 +193,7 @@
       <workItem from="1765965271359" duration="698000" />
       <workItem from="1765965979799" duration="10421000" />
       <workItem from="1766032579639" duration="1902000" />
-      <workItem from="1766034503650" duration="21091000" />
+      <workItem from="1766034503650" duration="25015000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765966295588</created>
@@ -259,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766294087689</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="bank layer 생성 및 초기화">
+      <created>1767265350682</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767265350682</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +298,19 @@
     <MESSAGE value="오타 수정" />
     <MESSAGE value="Entity data -&gt; class 구조 변경" />
     <MESSAGE value="OAuth- mysql 연동" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth- mysql 연동" />
+    <MESSAGE value="bank layer 생성 및 초기화" />
+    <option name="LAST_COMMIT_MESSAGE" value="bank layer 생성 및 초기화" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/domains/bank/service/BankService.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
