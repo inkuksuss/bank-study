@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="bank layer 생성 및 초기화">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisKeyProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/config/RedisConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/controller/TransferController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/model/Request.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/model/Response.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/repository/TransactionsAccount.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/repository/TransactionsUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/service/TransactionsService.kt" afterDir="false" />
+    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="redis connect, transaction logic 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/config/RedisConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/config/RedisConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +177,7 @@
       <workItem from="1765965979799" duration="10421000" />
       <workItem from="1766032579639" duration="1902000" />
       <workItem from="1766034503650" duration="25015000" />
-      <workItem from="1776421048884" duration="6194000" />
+      <workItem from="1776421048884" duration="7259000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765966295588</created>
@@ -265,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1767265350682</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="redis connect, transaction logic 생성">
+      <created>1776429514621</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776429514621</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +290,8 @@
     <MESSAGE value="Entity data -&gt; class 구조 변경" />
     <MESSAGE value="OAuth- mysql 연동" />
     <MESSAGE value="bank layer 생성 및 초기화" />
-    <option name="LAST_COMMIT_MESSAGE" value="bank layer 생성 및 초기화" />
+    <MESSAGE value="redis connect, transaction logic 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis connect, transaction logic 생성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
