@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="redis connect, transaction logic 생성">
+    <list default="true" id="eb8db59b-7f85-4c21-a7fa-582eb71d340e" name="Changes" comment="redis config 오류 수정">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/json/BigDecimalSerializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/json/LocalDateTimeSerializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/message/KafkaProducer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/config/KafkaProducerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/types/message/Topics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/types/message/TransactionMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/cache/RedisClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/config/RedisConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/config/RedisConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/exception/ErrorCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/service/TransactionsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domains/transactions/service/TransactionsService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +50,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
         <option value="Class" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -55,7 +63,6 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.11.1/cadd0b506a0451fb7d5d408d2cb53f59c73b9df0/mongodb-driver-core-4.11.1-sources.jar!/com/mongodb/MongoSocketOpenException.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.1.4/41a915620b58a36536852b7fb384804750df6ba/spring-web-6.1.4-sources.jar!/org/springframework/http/ResponseEntity.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,6 +88,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/inguk/Desktop/inguk/practice/back-study/bank-study/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,7 +105,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="common.json" />
       <recent name="types.entity" />
     </key>
   </component>
@@ -177,7 +189,7 @@
       <workItem from="1765965979799" duration="10421000" />
       <workItem from="1766032579639" duration="1902000" />
       <workItem from="1766034503650" duration="25015000" />
-      <workItem from="1776421048884" duration="7259000" />
+      <workItem from="1776421048884" duration="11889000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765966295588</created>
@@ -263,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1776429514621</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="redis config 오류 수정">
+      <created>1776430572020</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1776430572020</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +310,8 @@
     <MESSAGE value="OAuth- mysql 연동" />
     <MESSAGE value="bank layer 생성 및 초기화" />
     <MESSAGE value="redis connect, transaction logic 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis connect, transaction logic 생성" />
+    <MESSAGE value="redis config 오류 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis config 오류 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
